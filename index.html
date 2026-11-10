@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chedex Web Agency</title>
+<meta name="description" content="Chedex is a web development agency: UI/UX design, animation and clean code.">
+<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@600;700&family=Syne:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="lg"><img src="assets/logo-mark.png" alt=""><b>CHEDEX</b></div><i></i></div>
+<div class="wipe" aria-hidden="true"><img src="assets/logo-mark.png" alt=""></div>
+<div class="cur" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="#home" aria-label="Chedex home"><img src="assets/logo-mark.png" alt=""><span>CHEDEX</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#home" data-r="home">Home</a>
+      <a href="#services" data-r="services">Services</a>
+      <a href="#work" data-r="work">Work</a>
+      <a href="#process" data-r="process">Process</a>
+      <a href="#about" data-r="about">About</a>
+    </nav>
+    <a class="btn hdr-cta mag" href="#contact">Start a project
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+<div class="mmenu" id="mmenu">
+  <a href="#home">Home <em>01</em></a>
+  <a href="#services">Services <em>02</em></a>
+  <a href="#work">Work <em>03</em></a>
+  <a href="#process">Process <em>04</em></a>
+  <a href="#about">About <em>05</em></a>
+  <a href="#contact">Contact <em>06</em></a>
+</div>
+
+<main>
+<!-- HOME -->
+<div class="view" id="v-home">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow">Web development agency</span>
+        <h1>We design &amp; build <span class="rot" aria-label="websites, brands, stores, experiences"><span style="--i:0">websites</span><span style="--i:1">brands</span><span style="--i:2">stores</span><span style="--i:3">experiences</span></span> that move.</h1>
+        <p class="lead">Chedex is a web agency for businesses that want a site people remember. We combine UI/UX design, animation and clean engineering in one small team.</p>
+        <div class="cta">
+          <a class="btn mag" href="#contact">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost mag" href="#work">See our work</a>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="glow"></div>
+        <svg class="ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="none" stroke="#ffd320" stroke-width="1" stroke-dasharray="2 7" opacity=".7"/><circle cx="100" cy="6" r="4" fill="#ffd320"/></svg>
+        <svg class="ring r2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="1 5" opacity=".4"/><circle cx="100" cy="198" r="4" fill="#fff"/></svg>
+        <img class="mark" src="assets/logo-mark.png" alt="">
+        <span class="chip y">UI / UX</span><span class="chip">Motion</span><span class="chip">Code</span><span class="chip y">Brand</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marq" aria-hidden="true"><div class="track">
+    <span>UI / UX Design</span><span>Web Development</span><span>Animation</span><span>E-commerce</span><span>Branding</span><span>SEO &amp; Speed</span>
+    <span>UI / UX Design</span><span>Web Development</span><span>Animation</span><span>E-commerce</span><span>Branding</span><span>SEO &amp; Speed</span>
+  </div></div>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="eyebrow">What we do</span><h2>Everything a website needs, from <span class="hl">first sketch</span> to launch day.</h2><p>One team handles design, motion and code, so nothing gets lost between handoffs.</p></div>
+      <div class="cards" id="homeCards"></div>
+    </div>
+  </section>
+
+  <section class="pad paper">
+    <div class="wrap">
+      <div class="stats rv">
+        <div class="stat"><b><span data-to="60">60</span></b><span>frames per second is our motion target on every page</span></div>
+        <div class="stat"><b>&lt;<span data-to="2">2</span><small>s</small></b><span>load-time goal for the first screen on a normal connection</span></div>
+        <div class="stat"><b><span data-to="100">100</span><small>%</small></b><span>responsive, from small phones to wide monitors</span></div>
+        <div class="stat"><b><span data-to="1">1</span></b><span>team from design to launch, no handoffs to agencies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head rv"><span class="eyebrow">Selected work</span><h2>Concepts we've designed to show how we think.</h2></div>
+      <div class="works" id="homeWorks"></div>
+      <p style="margin-top:32px"><a class="btn dk mag" href="#work">All projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section>
+
+  <section class="cta-band pad">
+    <div class="wrap in">
+      <h2 class="rv">Got an idea? Let's make it <span style="background:var(--ink);color:var(--yellow);padding:0 .15em;border-radius:12px">move.</span></h2>
+      <a class="btn dk mag" href="#contact">Tell us about it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div class="view" id="v-services">
+  <section class="phero"><div class="deco"></div><div class="wrap"><span class="eyebrow">Services</span><h1>Design, motion &amp; code.</h1><p class="lead">Six services that work on their own or together. Open one to see what is included.</p></div></section>
+  <section class="pad" style="padding-top:20px">
+    <div class="wrap"><div class="acc" id="acc"></div></div>
+  </section>
+  <section class="cta-band pad"><div class="wrap in"><h2>Not sure what you need?</h2><a class="btn dk mag" href="#contact">Let's talk it through</a></div></section>
+</div>
+
+<!-- WORK -->
+<div class="view" id="v-work">
+  <section class="phero"><div class="deco"></div><div class="wrap"><span class="eyebrow">Work</span><h1>Ideas in motion.</h1><p class="lead">A set of concept projects built to show our range. Hover a card to see it come alive.</p></div></section>
+  <section class="pad" style="padding-top:20px"><div class="wrap">
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="works" id="allWorks"></div>
+    <p class="note">These are concept designs created by Chedex, not client projects.</p>
+  </div></section>
+</div>
+
+<!-- PROCESS -->
+<div class="view" id="v-process">
+  <section class="dark"><div class="phero"><div class="wrap"><span class="eyebrow">Process</span><h1>Five steps, no surprises.</h1><p class="lead">A clear path from first call to launch. You see progress at every step and can steer along the way.</p></div></div>
+  <div class="wrap pad" style="padding-top:20px">
+    <div class="tl" id="tl"></div>
+  </div></section>
+  <section class="cta-band pad"><div class="wrap in"><h2>Ready for step one?</h2><a class="btn dk mag" href="#contact">Start the conversation</a></div></section>
+</div>
+
+<!-- ABOUT -->
+<div class="view" id="v-about">
+  <section class="phero"><div class="deco"></div><div class="wrap"><span class="eyebrow">About Chedex</span><h1>A studio obsessed with how the web feels.</h1></div></section>
+  <section class="pad" style="padding-top:20px"><div class="wrap split">
+    <div class="rv"><p class="big-quote">Good sites load fast, read clearly and leave a <span class="hl">small spark</span> behind.</p></div>
+    <div class="rv" style="display:grid;gap:18px;color:#3b3b37;font-size:1.08rem">
+      <p>The Chedex mark is a sun rising inside a "C": a bright centre, with movement around it. That is how we build websites. One clear idea in the middle, and motion that guides people toward it.</p>
+      <p>We are a web development agency that works across UI/UX design, animation and front-end engineering. Small projects and big launches get the same care.</p>
+    </div>
+  </div></section>
+  <section class="pad paper"><div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">How we work</span><h2>Four things we won't compromise on.</h2></div>
+    <div class="vals">
+      <div class="val rv"><i></i><b>Clarity first</b><p>If a visitor can't tell what you do in five seconds, the animation doesn't matter.</p></div>
+      <div class="val rv"><i></i><b>Motion with purpose</b><p>Every animation guides attention or confirms an action. Nothing moves just to move.</p></div>
+      <div class="val rv"><i></i><b>Built to last</b><p>Clean code, fast pages and a setup your team can edit without calling us.</p></div>
+      <div class="val rv"><i></i><b>Honest scope</b><p>Fixed plans, clear timelines and straight answers when something won't work.</p></div>
+    </div>
+  </div></section>
+  <section class="dark pad"><div class="wrap split">
+    <div><div class="sec-head"><span class="eyebrow">Our toolbox</span><h2>Modern tools, chosen per project.</h2></div>
+      <div class="stack"><span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>GSAP</span><span>WebGL</span><span>Figma</span><span>WordPress</span><span>Shopify</span><span>Stripe</span></div></div>
+    <div class="orbit" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#ffd320" stroke-width="1" stroke-dasharray="2 6"/><circle cx="100" cy="4" r="5" fill="#ffd320"/><circle cx="100" cy="100" r="68" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/><circle cx="168" cy="100" r="4" fill="#fff"/></svg>
+      <img class="core" src="assets/logo-mark.png" alt="">
+    </div>
+  </div></section>
+  <section class="cta-band pad"><div class="wrap in"><h2>Work with us.</h2><a class="btn dk mag" href="#contact">Start a project</a></div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="view" id="v-contact">
+  <section class="phero"><div class="deco"></div><div class="wrap"><span class="eyebrow">Contact</span><h1>Tell us what you're building.</h1><p class="lead">Fill in the brief below. It takes two minutes and helps us reply with something useful.</p></div></section>
+  <section class="pad" style="padding-top:20px"><div class="wrap contact">
+    <form class="brief" id="brief" novalidate>
+      <div class="row2">
+        <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" placeholder="Jane Perera" required></label>
+        <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required></label>
+      </div>
+      <fieldset style="border:0;padding:0;margin:0;display:grid;gap:10px;min-width:0">
+        <legend style="font-weight:700;font-size:.88rem;padding:0;margin-bottom:8px">What do you need?</legend>
+        <div class="pills" id="needs">
+          <label><input type="checkbox" name="need" value="Website design" checked><span>Website design</span></label>
+          <label><input type="checkbox" name="need" value="Web development"><span>Web development</span></label>
+          <label><input type="checkbox" name="need" value="Animation"><span>Animation</span></label>
+          <label><input type="checkbox" name="need" value="E-commerce"><span>E-commerce</span></label>
+          <label><input type="checkbox" name="need" value="Branding"><span>Branding</span></label>
+        </div>
+      </fieldset>
+      <div class="row2">
+        <label for="f-budget">Budget range<select id="f-budget"><option>Not sure yet</option><option>Under $1,000</option><option>$1,000 – $3,000</option><option>$3,000 – $10,000</option><option>$10,000+</option></select></label>
+        <label for="f-time">Timeline<select id="f-time"><option>Flexible</option><option>Within 1 month</option><option>1 – 3 months</option><option>3+ months</option></select></label>
+      </div>
+      <label for="f-msg">About the project<textarea id="f-msg" placeholder="What does your business do, and what should the website achieve?"></textarea></label>
+      <button class="btn mag" type="submit" style="justify-self:start">Build my brief <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="out-box" id="out" aria-live="polite">
+        <b>Your brief is ready</b>
+        <pre id="outTxt"></pre>
+        <p style="font-size:.9rem;color:#3f3f3a">Copy it and email it to <b>hello@chedex.com</b>.</p>
+        <button class="btn ghost" type="button" id="copyBrief" style="justify-self:start">Copy brief</button>
+      </div>
+    </form>
+    <aside class="info">
+      <div class="row"><small>Email</small><b>hello@chedex.com</b></div>
+      <div class="row"><small>Reply time</small><b>Within 1 business day</b></div>
+      <div class="row"><small>Typical start</small><b>2 weeks after kickoff</b></div>
+      <div style="margin-top:10px">
+        <details><summary>How much does a website cost?</summary><p>It depends on pages, features and animation. Send your brief and we'll reply with a fixed quote.</p></details>
+        <details><summary>Do you build online stores?</summary><p>Yes. We build stores with product pages, checkout and payments, designed to convert.</p></details>
+        <details><summary>Can I edit the site myself later?</summary><p>Yes. We set up a simple content system and show your team how to use it.</p></details>
+      </div>
+    </aside>
+  </div></section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Let's build<br>something <em>bright.</em></div>
+    <div class="cols">
+      <div><a class="brand" href="#home"><img src="assets/logo-mark.png" alt=""><span>CHEDEX</span></a><span style="margin-top:10px;max-width:26ch">Websites with motion, made to be remembered.</span></div>
+      <div><h4>Pages</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a></div>
+      <div><h4>Services</h4><span>UI / UX design</span><span>Web development</span><span>Motion &amp; animation</span><span>E-commerce</span></div>
+      <div><h4>Contact</h4><a href="#contact">Start a project</a><span>hello@chedex.com</span></div>
+    </div>
+    <div class="fine"><span>&copy; 2026 Chedex. All rights reserved.</span><span>Design &middot; Motion &middot; Code</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
