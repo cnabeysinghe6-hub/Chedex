@@ -17,4 +17,4 @@ Tested with headless Chromium (Playwright) on the final index.html.
 2. External links (restaurant demo, fashion demo, Instagram, wa.me) were format-checked only; the sandbox is offline.
 3. Google Fonts could not load offline, so layouts were tested with fallback fonts. The only console message was the blocked font request. Re-check once online.
 4. Real iPhone/Android devices and Safari/Firefox were not tested (Chromium only).
-5. Package prices and the removed testimonials: prices are still sample values and need your real figures.
+5. Package prices are set to LKR 25,000 / 45,000 / 70,000.
