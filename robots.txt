@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chedex.site/sitemap.xml
