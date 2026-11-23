@@ -50,7 +50,7 @@
     "height": 192
    },
    "image": "https://chedex.site/favicon-192.png",
-   "description": "Digital agency offering web development, SEO, digital marketing and website maintenance.",
+   "description": "Digital agency offering web development, SEO, digital marketing, graphic design and website maintenance.",
    "email": "hellochedex@gmail.com",
    "telephone": "+94702455440",
    "contactPoint": {
@@ -101,7 +101,7 @@
    "name": "CHEDEX",
    "url": "https://chedex.site/",
    "image": "https://chedex.site/favicon-192.png",
-   "description": "Digital agency offering web development, SEO, digital marketing and website maintenance.",
+   "description": "Digital agency offering web development, SEO, digital marketing, graphic design and website maintenance.",
    "email": "hellochedex@gmail.com",
    "telephone": "+94702455440",
    "areaServed": {
@@ -157,6 +157,22 @@
        "name": "Digital marketing",
        "description": "Social content and campaigns that build your brand and keep your inbox busy.",
        "url": "https://chedex.site/#digital-marketing",
+       "provider": {
+        "@id": "https://chedex.site/#organization"
+       },
+       "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Graphic design",
+       "description": "Social media designs, promotional graphics, ad creatives and business materials that keep your brand consistent.",
+       "url": "https://chedex.site/#graphic-design",
        "provider": {
         "@id": "https://chedex.site/#organization"
        },
@@ -358,6 +374,51 @@ footer{border-top:1px solid var(--bd);padding:60px 0 40px}
 .fab svg{width:26px}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
 @media(max-width:860px){.links{display:none}#menu{display:grid}.links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;padding:24px;border-radius:28px;background:var(--bg2);border:1px solid var(--bd);gap:18px}.contact{grid-template-columns:1fr}section{padding:80px 0}.nav-cta{display:none}}
+/* services 3d */
+#services{padding:0;overflow:clip}
+.sv-stage{padding:96px 0 26px;display:flex;flex-direction:column;gap:18px}
+.sv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.sv-head h2{font-size:clamp(34px,4.6vw,60px)}.sv-head .sub{margin-top:10px}
+.sv-count{font:400 clamp(44px,6vw,76px) Anton;color:var(--yt);line-height:1;text-shadow:0 0 30px rgba(255,211,33,.35)}.sv-count small{font-size:.36em;color:var(--mut);margin-left:6px;text-shadow:none}
+.sv-prog{height:3px;border-radius:3px;background:var(--bd);overflow:hidden;margin-top:18px}.sv-prog i{display:block;height:100%;background:var(--y);box-shadow:0 0 14px var(--y);transform:scaleX(0);transform-origin:0 50%}
+.sv-hint{font-size:13px;color:var(--mut);margin-top:10px;letter-spacing:.06em;text-transform:uppercase}.sv-hint .d{display:none}
+.sv-view{position:relative}
+.sv-track{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 9vw 22px;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.sv-track::-webkit-scrollbar{display:none}
+.sv-card{--w:82vw;flex:0 0 var(--w);scroll-snap-align:center;min-width:0}
+.sv-in{height:100%;display:flex;flex-direction:column;border-radius:32px;overflow:hidden;background:var(--gl);border:1px solid var(--bd);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--sh);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out,border-color .5s,box-shadow .5s}
+.sv-card.on .sv-in{border-color:rgba(255,211,33,.5);box-shadow:0 30px 90px rgba(255,211,33,.16)}
+:root[data-theme=light] .sv-card.on .sv-in{border-color:var(--yt);box-shadow:0 24px 70px rgba(154,111,0,.22)}
+.sv-vis{position:relative;flex:0 0 250px;overflow:hidden;color:#fff;background:radial-gradient(70% 90% at 50% 0%,rgba(255,211,33,.2),transparent 70%),#0b0c0f;border-bottom:1px solid var(--bd)}
+.sv-txt{padding:24px 28px 28px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;flex:1}
+.sv-top{display:flex;align-items:center;gap:14px;width:100%}.sv-top .badge{margin:0;width:48px;height:48px;border-radius:15px}.sv-top .badge svg{width:24px}
+.sv-top b{margin-left:auto;font:400 22px Anton;color:var(--yt);opacity:.8}
+.sv-txt h3{font-size:clamp(28px,3vw,40px)}.sv-txt p{color:var(--mut);font-size:16px}.sv-txt .btn{margin-top:auto;padding:13px 24px}
+.sv-js .sv-txt>*{opacity:.35;transform:translateY(12px);transition:opacity .6s,transform .6s}
+.sv-js .on .sv-txt>*{opacity:1;transform:none}.sv-js .on .sv-txt>:nth-child(2){transition-delay:.08s}.sv-js .on .sv-txt>:nth-child(3){transition-delay:.16s}.sv-js .on .sv-txt>:nth-child(4){transition-delay:.24s}
+.on .badge svg{animation:ico 3s ease-in-out infinite}@keyframes ico{50%{transform:rotate(-9deg) scale(1.15)}}
+.fl{position:absolute;padding:10px;border-radius:14px;background:rgba(24,26,32,.94);border:1px solid rgba(255,255,255,.12);box-shadow:0 14px 34px rgba(0,0,0,.5);font-size:11px;line-height:1.4;translate:calc(var(--d,0)*var(--z,20)*-1px) 0;rotate:var(--r,0deg);animation:fl 6s ease-in-out infinite;animation-delay:var(--t,0s)}
+.sv-card:not(.on) .fl{animation-play-state:paused}@keyframes fl{50%{transform:translateY(-8px)}}
+.ln{display:block;height:6px;border-radius:4px;background:rgba(255,255,255,.2);margin-top:6px}.yb{background:var(--y)}
+.dots{display:flex;gap:5px}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.28)}
+.p2{display:inline-block;margin-top:9px;background:var(--y);color:#000;border-radius:99px;padding:3px 10px;font-weight:600;font-size:10px}
+.mono{font:11px/1.6 ui-monospace,Menlo,Consolas,monospace}.cy{color:#7fd4ff}.yl{color:#FFD321}.gn{color:#3ddc84}
+.caret{display:inline-block;width:2px;height:12px;background:var(--y);margin-left:2px;vertical-align:-2px;animation:cr 1s steps(1) infinite}@keyframes cr{50%{opacity:0}}
+.chip{display:inline-block;background:var(--y);color:#000;font-weight:700;border-radius:6px;padding:0 6px;margin-right:6px}
+.gr{fill:none;stroke:#FFD321;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:200;stroke-dashoffset:200;animation:dr 3.4s ease-in-out infinite}@keyframes dr{60%,100%{stroke-dashoffset:0}}
+.bars{display:flex;align-items:flex-end;gap:4px;height:34px}.bars i{flex:1;background:var(--y);border-radius:3px 3px 0 0;transform-origin:bottom;animation:bg 2.4s ease-in-out infinite}.bars i:nth-child(2){animation-delay:.2s}.bars i:nth-child(3){animation-delay:.4s}.bars i:nth-child(4){animation-delay:.6s}@keyframes bg{50%{transform:scaleY(.6)}}
+.row{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-top:1px solid rgba(255,255,255,.08)}.row:first-of-type{border:0}
+.ring{stroke-dasharray:163;stroke-dashoffset:163;animation:rg 3.2s ease-in-out infinite}@keyframes rg{60%,100%{stroke-dashoffset:3}}
+.sw{display:flex;gap:5px;margin-top:6px}.sw i{width:20px;height:20px;border-radius:50%}
+@media(prefers-reduced-motion:reduce){.gr{stroke-dashoffset:0}.ring{stroke-dashoffset:3}.sv-js .sv-txt>*{opacity:1;transform:none}}
+@media(min-width:861px){.sv-hint .m{display:none}.sv-hint .d{display:inline}}
+.sv-3d{height:calc(100vh + 300vh);height:calc(100svh + 300svh)}
+.sv-3d .sv-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.sv-3d .sv-view{flex:1;min-height:0;perspective:1500px;perspective-origin:50% 38%}
+.sv-3d .sv-track{display:block;height:100%;padding:0;overflow:visible;transform-style:preserve-3d;scroll-snap-type:none}
+.sv-3d .sv-card{--w:min(660px,70vw);position:absolute;left:50%;top:0;width:var(--w);margin-left:calc(var(--w)/-2);height:min(100%,560px);will-change:transform,opacity}
+.sv-3d .sv-vis{flex:1 1 52%}
+@media(max-width:860px){.sv-vis{flex-basis:230px}.sv-txt{padding:20px 22px 24px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 b,.hero .sub,.cta{opacity:1;transform:none}}
 </style>
 </head>
@@ -386,19 +447,36 @@ footer{border-top:1px solid var(--bd);padding:60px 0 40px}
 <h1><span><b>We build</b></span><span><b>websites that</b></span><span><b><i class="hl" style="font-style:normal">convert.</i></b></span></h1>
 <p class="sub">CHEDEX is a digital agency for web development, SEO, digital marketing and website care. We design sites that look premium and bring you customers.</p>
 <div class="cta"><a class="btn" href="https://wa.me/94702455440?text=Hi%20CHEDEX%2C%20I%27d%20like%20a%20free%20quote" target="_blank" rel="noopener">Get a free quote</a><a class="btn ghost" href="#work">View our work</a></div>
-<div class="stats"><div class="glass stat"><strong data-n="2">0</strong><span>Live demo sites</span></div><div class="glass stat"><strong data-n="4">0</strong><span>Core services</span></div><div class="glass stat"><strong data-n="100" data-s="%">0</strong><span>Mobile-ready builds</span></div></div>
+<div class="stats"><div class="glass stat"><strong data-n="2">0</strong><span>Live demo sites</span></div><div class="glass stat"><strong data-n="5">0</strong><span>Core services</span></div><div class="glass stat"><strong data-n="100" data-s="%">0</strong><span>Mobile-ready builds</span></div></div>
 </div></header>
 
-<div class="mq" aria-hidden="true"><div class="mq-track"><div class="mq-group"><span class="mq-card">Web Development</span><span class="mq-card">SEO</span><span class="mq-card">Digital Marketing</span><span class="mq-card">Website Maintenance</span></div><div class="mq-group"><span class="mq-card">Web Development</span><span class="mq-card">SEO</span><span class="mq-card">Digital Marketing</span><span class="mq-card">Website Maintenance</span></div></div></div>
+<div class="mq" aria-hidden="true"><div class="mq-track"><div class="mq-group"><span class="mq-card">Web Development</span><span class="mq-card">SEO</span><span class="mq-card">Digital Marketing</span><span class="mq-card">Graphic Design</span><span class="mq-card">Website Maintenance</span></div><div class="mq-group"><span class="mq-card">Web Development</span><span class="mq-card">SEO</span><span class="mq-card">Digital Marketing</span><span class="mq-card">Graphic Design</span><span class="mq-card">Website Maintenance</span></div></div></div>
 
-<section id="services" aria-labelledby="services-title"><div class="wrap">
-<div class="head rv"><h2 id="services-title">What we do</h2><p class="sub">Four services, one team. Open any service to see exactly what you get.</p></div>
-<div class="g4">
-<a class="glass card rv" href="#web-development"><div class="badge"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><h3>Web development</h3><p>Fast, responsive websites and stores built around one goal: turning visitors into customers.</p><span class="more">Learn more →</span></a>
-<a class="glass card rv" href="#seo"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><h3>SEO</h3><p>Technical and content SEO so people searching for you in Sri Lanka find you first.</p><span class="more">Learn more →</span></a>
-<a class="glass card rv" href="#digital-marketing"><div class="badge"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><h3>Digital marketing</h3><p>Social content and campaigns that build your brand and keep your inbox busy.</p><span class="more">Learn more →</span></a>
-<a class="glass card rv" href="#website-maintenance"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div><h3>Website maintenance</h3><p>Updates, backups, security and quick fixes, so your site stays fast and online.</p><span class="more">Learn more →</span></a>
-</div></div></section>
+<section id="services" aria-labelledby="services-title"><div class="sv-stage">
+<div class="wrap" style="width:100%"><div class="sv-head"><div><h2 id="services-title">What we do</h2><p class="sub">Five services, one team. Explore each one, then open the service to see exactly what you get.</p></div><div class="sv-count" aria-live="polite"><span id="sv-n">01</span><small>/ 05</small></div></div>
+<div class="sv-prog" aria-hidden="true"><i id="sv-bar"></i></div><div class="sv-hint" aria-hidden="true"><span class="d">Scroll to explore ↓</span><span class="m">Swipe to explore →</span></div></div>
+<div class="sv-view"><div class="sv-track" id="sv-track">
+<article class="sv-card" aria-label="1 of 5: Web development"><div class="sv-in"><div class="sv-vis" aria-hidden="true"><div class="fl" style="left:6%;top:11%;width:58%;--z:26;--r:-3deg"><div class="dots"><i></i><i></i><i></i></div><span class="ln yb" style="height:36px;margin-top:9px;border-radius:8px"></span><span class="ln" style="width:80%"></span><span class="ln" style="width:55%"></span><b class="p2">Get started</b></div>
+<div class="fl mono" style="right:5%;top:28%;width:50%;--z:48;--r:3deg;--t:-2s"><span class="cy">&lt;section&gt;</span><br>&nbsp;&nbsp;<span class="yl">&lt;h1&gt;</span>Convert<span class="yl">&lt;/h1&gt;</span><br>&nbsp;&nbsp;<span class="cy">&lt;a</span> href=<span class="gn">"#quote"</span><span class="cy">&gt;</span><br><span class="cy">&lt;/section&gt;</span></div>
+<div class="fl" style="left:12%;bottom:8%;--z:70;--t:-4s;padding:8px 12px"><b class="yl">98</b> speed score</div></div><div class="sv-txt"><div class="sv-top"><div class="badge"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><b>01</b></div><h3>Web development</h3><p>Fast, responsive websites and stores built around one goal: turning visitors into customers.</p><a class="btn" href="#web-development">Explore Service <span aria-hidden="true">→</span></a></div></div></article>
+<article class="sv-card" aria-label="2 of 5: SEO"><div class="sv-in"><div class="sv-vis" aria-hidden="true"><div class="fl" style="left:7%;top:9%;width:84%;--z:18;display:flex;align-items:center;gap:8px;border-radius:99px;padding:9px 14px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFD321" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>best cafe in Colombo<span class="caret"></span></div>
+<div class="fl" style="left:7%;top:33%;width:52%;--z:34;--r:-2deg;--t:-1s"><span class="chip">#1</span><b>yourbusiness.lk</b><span class="ln" style="width:90%"></span><span class="ln" style="width:65%"></span></div>
+<div class="fl" style="right:5%;bottom:8%;width:44%;--z:56;--r:3deg;--t:-3s"><svg viewBox="0 0 120 60" width="100%" height="44"><polyline class="gr" points="2,54 24,44 44,48 70,26 92,30 118,6"/></svg><b class="yl">+312%</b> traffic</div>
+<div class="fl" style="left:9%;bottom:10%;--z:72;--t:-2s;padding:8px 12px">Page <b class="yl">1</b> ranking</div></div><div class="sv-txt"><div class="sv-top"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><b>02</b></div><h3>SEO</h3><p>Technical and content SEO so people searching for you in Sri Lanka find you first.</p><a class="btn" href="#seo">Explore Service <span aria-hidden="true">→</span></a></div></div></article>
+<article class="sv-card" aria-label="3 of 5: Digital marketing"><div class="sv-in"><div class="sv-vis" aria-hidden="true"><div class="fl" style="left:7%;top:10%;width:34%;--z:30;--r:-6deg"><div style="aspect-ratio:1.3;border-radius:9px;background:linear-gradient(135deg,#FFD321,#f59e0b)"></div><span class="ln" style="width:70%"></span><span style="display:block;margin-top:6px">&#9829; 2.4k</span></div>
+<div class="fl" style="left:42%;top:20%;width:26%;--z:52;--r:5deg;--t:-2s;background:linear-gradient(160deg,#2b1250,#8B4FD8);text-align:center;padding:14px 6px"><b style="font:400 20px/1 Anton">SALE<br>50%</b></div>
+<div class="fl" style="right:5%;top:11%;width:26%;--z:70;--t:-1s"><div class="bars"><i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:95%"></i></div><b class="yl">+248%</b> reach</div>
+<div class="fl" style="right:7%;bottom:9%;--z:40;--t:-3s;padding:8px 12px"><span class="gn">&#9679;</span> Campaign live</div></div><div class="sv-txt"><div class="sv-top"><div class="badge"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><b>03</b></div><h3>Digital marketing</h3><p>Social content and campaigns that build your brand and keep your inbox busy.</p><a class="btn" href="#digital-marketing">Explore Service <span aria-hidden="true">→</span></a></div></div></article>
+<article class="sv-card" aria-label="4 of 5: Graphic design"><div class="sv-in"><div class="sv-vis" aria-hidden="true"><div class="fl" style="left:7%;top:9%;width:28%;height:80%;--z:28;--r:-5deg;background:linear-gradient(160deg,#FFD321,#ff8a00);color:#000;border:0"><b style="font:400 46px/1 Anton">Aa</b><span class="ln" style="background:#000;width:70%;opacity:.8"></span><span class="ln" style="background:#000;width:45%;opacity:.5"></span><i style="display:block;width:42%;aspect-ratio:1;border-radius:50%;background:#000;margin-top:14px"></i></div>
+<div class="fl" style="left:37%;top:13%;width:29%;--z:50;--r:4deg;--t:-2s">Brand colors<div class="sw"><i style="background:#FFD321"></i><i style="background:#fff"></i><i style="background:#8B4FD8"></i><i style="background:#3a3f4b"></i></div></div>
+<div class="fl" style="right:6%;top:10%;width:25%;--z:66;--r:-3deg;--t:-1s;text-align:center"><svg viewBox="0 0 40 40" width="100%" height="48" fill="none" stroke="#FFD321" stroke-width="2.5"><path d="M6 32C10 6 28 6 34 32"/><circle cx="6" cy="32" r="2.5" fill="#fff"/><circle cx="34" cy="32" r="2.5" fill="#fff"/><circle cx="20" cy="9" r="2.5" fill="#fff"/></svg>Logo</div>
+<div class="fl" style="left:38%;bottom:9%;width:25%;--z:36;--r:-2deg;--t:-3s;background:linear-gradient(135deg,#2b1250,#8B4FD8);text-align:center"><b style="font:400 18px/1.1 Anton">NEW<br>POST</b></div>
+<div class="fl" style="right:5%;bottom:10%;--z:80;--t:-4s;padding:8px 12px"><b class="yl">Anton</b> / Outfit</div></div><div class="sv-txt"><div class="sv-top"><div class="badge"><svg viewBox="0 0 24 24"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg></div><b>04</b></div><h3>Graphic design</h3><p>Social posts, ads, posters and brand materials that look professional and keep your brand consistent.</p><a class="btn" href="#graphic-design">Explore Service <span aria-hidden="true">→</span></a></div></div></article>
+<article class="sv-card" aria-label="5 of 5: Website maintenance"><div class="sv-in"><div class="sv-vis" aria-hidden="true"><div class="fl" style="left:6%;top:10%;width:56%;--z:24;--r:-2deg"><div class="row"><span>Backup</span><span class="gn">&#10003; done</span></div><div class="row"><span>SSL</span><span class="gn">&#10003; secure</span></div><div class="row"><span>Updates</span><span class="yl">0 pending</span></div></div>
+<div class="fl" style="right:6%;top:14%;--z:50;--r:3deg;--t:-2s;text-align:center"><svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-width="6" stroke-linecap="round"><circle cx="32" cy="32" r="26" stroke="rgba(255,255,255,.12)"/><circle class="ring" cx="32" cy="32" r="26" stroke="#FFD321" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" fill="#fff" stroke="none" font-size="16" font-weight="700">98</text></svg>speed</div>
+<div class="fl" style="left:12%;bottom:9%;width:36%;--z:68;--t:-1s"><b class="yl">99.99%</b> uptime<div class="bars" style="height:18px;margin-top:6px"><i style="height:90%"></i><i style="height:100%"></i><i style="height:95%"></i><i style="height:100%"></i></div></div>
+<div class="fl" style="right:8%;bottom:9%;--z:36;--t:-3s;padding:8px 12px"><span class="gn">&#9679;</span> Protected</div></div><div class="sv-txt"><div class="sv-top"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div><b>05</b></div><h3>Website maintenance</h3><p>Updates, backups, security and quick fixes, so your site stays fast and online.</p><a class="btn" href="#website-maintenance">Explore Service <span aria-hidden="true">→</span></a></div></div></article>
+</div></div></div></section>
 
 <section id="work" aria-labelledby="work-title"><div class="wrap">
 <div class="head rv"><h2 id="work-title">Demo projects</h2><p class="sub">Open the live sites and see what we can build for your business.</p></div>
@@ -500,10 +578,13 @@ s:[['Audit','We check your site and your competitors.'],['Optimize','We fix issu
 'digital-marketing':{t:'Digital marketing',a:'Grow your',b:'audience.',tag:'Digital marketing',intro:'Great posts, smart campaigns and clear tracking, so more of the right people know your brand and message you.',
 f:[['Social media content','Posts and carousels designed in your brand style.'],['Brand identity','Consistent colors, fonts and tone across every channel.'],['Paid ad campaigns','Facebook and Instagram ads aimed at the right audience.'],['Lead generation','Offers and landing pages that turn views into enquiries.'],['WhatsApp and email','Follow-up campaigns that bring customers back.'],['Performance tracking','Simple reports that show what is working.']],
 s:[['Strategy','We set goals, audience and a content plan.'],['Create and publish','We design content and run your campaigns.'],['Measure','We review results and improve every month.']]},
+'graphic-design':{t:'Graphic design',a:'Designs that',b:'stand out.',tag:'Graphic design',intro:'Professional graphic design for businesses: social media posts, promotional graphics, ads and print-ready materials that look sharp and stay true to your brand.',
+f:[['Social media designs','Posts, carousels and stories designed to stop the scroll.'],['Promotional graphics','Posters, flyers and offers that get noticed and drive enquiries.'],['Brand consistency','The same colors, fonts and style across every design you publish.'],['Ad creatives','Eye-catching Facebook and Instagram ad visuals made to perform.'],['Business materials','Logos, business cards, menus, brochures and letterheads.'],['Custom designs','Original work made for your business. Never a recycled template.']],
+s:[['Brief','You tell us about your brand, audience and what you need.'],['Design','We create concepts and refine them with your feedback.'],['Deliver','You receive final files, ready for social, web and print.']]},
 'website-maintenance':{t:'Website maintenance',a:'Keep your site',b:'running.',tag:'Website maintenance',intro:'A website needs care after launch. We keep yours updated, secure and fast, and fix problems before your customers notice.',
 f:[['Updates and backups','Regular updates and safe backups you can restore.'],['Security monitoring','We watch for threats and keep your site protected.'],['Speed tuning','Ongoing checks so pages stay quick.'],['Content changes','Send us text, photos or prices and we update the site.'],['Uptime checks','We know when your site goes down, and fix it fast.'],['Priority support','Message us on WhatsApp any time.']],
 s:[['Check','We review your site and set up monitoring.'],['Maintain','We update, back up and protect it every month.'],['Support','You message us, we fix it.']]}};
-const ICO={'web-development':'<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>','seo':'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>','digital-marketing':'<path d="M3 17l6-6 4 4 8-8M15 7h6v6"/>','website-maintenance':'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/>'};
+const ICO={'web-development':'<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>','seo':'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>','digital-marketing':'<path d="M3 17l6-6 4 4 8-8M15 7h6v6"/>','graphic-design':'<path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/>','website-maintenance':'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/>'};
 function render(k){const s=S[k],wa='https://wa.me/94702455440?text='+encodeURIComponent('Hi CHEDEX, I\u2019m interested in '+s.t+'.');
 $('#svc').innerHTML=`<header class="hero short"><div class="wrap"><a class="back" href="#services">\u2190 All services</a><div class="pill"><i></i>${s.tag}</div><h1>${s.a} <i class="hl" style="font-style:normal">${s.b}</i></h1><p class="sub" style="opacity:1;transform:none">${s.intro}</p><div class="cta" style="opacity:1;transform:none"><a class="btn" href="${wa}" target="_blank" rel="noopener">Get a free quote</a><a class="btn ghost" href="#work">See our work</a></div></div></header>
 <section style="padding-top:60px"><div class="wrap"><div class="head rv"><h2>What\u2019s included</h2></div><div class="g4">${s.f.map(f=>`<div class="glass card rv"><h3>${f[0]}</h3><p>${f[1]}</p></div>`).join('')}</div></div></section>
@@ -516,6 +597,26 @@ document.querySelectorAll('[data-page]').forEach(p=>p.hidden=p.dataset.page!==(i
 $('#links').classList.remove('open');$('#menu').setAttribute('aria-expanded','false');
 if(isS){render(h);document.title=S[h].t+' | CHEDEX';scrollTo(0,0)}else{document.title='CHEDEX | Web Development, SEO & Digital Marketing in Sri Lanka';const el=h&&document.getElementById(h);el?el.scrollIntoView():scrollTo(0,0)}}
 $('#skip').onclick=e=>{e.preventDefault();const m=document.querySelector('[data-page]:not([hidden])');m.focus();m.scrollIntoView()};
+(()=>{const sec=$('#services'),trk=$('#sv-track'),cards=[...trk.children],n=cards.length,num=$('#sv-n'),bar=$('#sv-bar'),mqD=matchMedia('(min-width:861px)'),mqR=matchMedia('(prefers-reduced-motion:reduce)');
+let d3=false,act=-1,cur=0,tgt=0,raf=0;sec.classList.add('sv-js');
+const setAct=i=>{if(i===act)return;act=i;cards.forEach((c,j)=>c.classList.toggle('on',j===i));num.textContent='0'+(i+1)},maxS=()=>sec.offsetHeight-innerHeight,go=()=>{if(!raf)raf=requestAnimationFrame(step)};
+function read(){if(d3){const m=maxS();tgt=m>0?Math.min(1,Math.max(0,-sec.getBoundingClientRect().top/m))*(n-1):0}else{const m=trk.scrollWidth-trk.clientWidth;tgt=cur=m>0?trk.scrollLeft/m*(n-1):0}go()}
+function step(){raf=0;if(d3){cur+=(tgt-cur)*.14;if(Math.abs(tgt-cur)<.002)cur=tgt;else go();const W=cards[0].offsetWidth;
+cards.forEach((c,i)=>{const d=i-cur,a=Math.abs(d),k=Math.min(a,2);c.style.setProperty('--d',d.toFixed(3));
+c.style.transform=`translate3d(${d*W*.9}px,0,${-k*120}px) rotateY(${Math.max(-1,Math.min(1,-d))*34}deg) scale(${1-Math.min(a,1)*.14})`;
+c.style.opacity=Math.max(0,1-k*.42).toFixed(2);c.style.pointerEvents=a>1.5?'none':''})}
+bar.style.transform='scaleX('+cur/(n-1)+')';setAct(Math.round(cur))}
+function mode(){const v=mqD.matches&&!mqR.matches;if(v===d3&&act!==-1){read();return}d3=v;sec.classList.toggle('sv-3d',v);
+if(!v)cards.forEach(c=>{c.style.transform=c.style.opacity=c.style.pointerEvents='';c.style.removeProperty('--d')});act=-1;read()}
+function goTo(i){if(d3)scrollTo({top:sec.getBoundingClientRect().top+scrollY+i/(n-1)*maxS(),behavior:'smooth'});else{const c=cards[i];trk.scrollTo({left:c.offsetLeft-(trk.clientWidth-c.offsetWidth)/2,behavior:'smooth'})}}
+addEventListener('scroll',read,{passive:true});addEventListener('resize',mode);trk.addEventListener('scroll',()=>{if(!d3)read()},{passive:true});
+mqD.addEventListener('change',mode);mqR.addEventListener('change',mode);
+cards.forEach((c,i)=>{const w=c.firstElementChild;
+c.addEventListener('click',e=>{if(i!==act&&!e.target.closest('a'))goTo(i)});
+c.addEventListener('focusin',()=>{if(i!==act&&d3)goTo(i)});
+c.addEventListener('pointermove',e=>{if(!d3||i!==act||e.pointerType!=='mouse')return;const r=c.getBoundingClientRect();w.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*10+'deg');w.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*8+'deg')});
+c.addEventListener('pointerleave',()=>{w.style.setProperty('--ry','0deg');w.style.setProperty('--rx','0deg')})});
+mode()})();
 addEventListener('hashchange',route);route();
 </script>
 </body>
